@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react'
 import { Pin } from './Pin'
 
 class GoogleMap extends Component {
-  render () {
+  render() {
     return (
       <div className='container'>
         <div style={{ height: '100vh', margin: '0 auto' }}>

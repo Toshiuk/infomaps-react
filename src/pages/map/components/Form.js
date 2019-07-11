@@ -2,9 +2,9 @@
 import React, { Component } from 'react'
 
 class Form extends Component {
-  render () {
+  render() {
     return (
-      <section class='section'>
+      <section className='section'>
         <form
           onSubmit={(e) => {
             e.preventDefault()
@@ -13,13 +13,13 @@ class Form extends Component {
         >
           <div className='field is-grouped'>
             <p className='control is-expanded'>
-              <input className='input' type='text' value={this.state === null ? null : this.state.name} onChange={event => this.setState({ name: event.target.value })} placeholder='Name' />
+              <input className='input' type='text' value={this.state === null ? '' : this.state.name} onChange={event => this.setState({ name: event.target.value })} placeholder='Name' />
             </p>
             <p className='control is-expanded'>
-              <input className='input' type='number' value={this.state === null ? null : this.state.lat} onChange={event => this.setState({ lat: event.target.value })} placeholder='Latitude' />
+              <input className='input' type='number' value={this.state === null ? '' : this.state.lat} onChange={event => this.setState({ lat: event.target.value })} placeholder='Latitude' />
             </p>
             <p className='control is-expanded'>
-              <input className='input' type='number' value={this.state === null ? null : this.state.lng} onChange={event => this.setState({ lng: event.target.value })} placeholder='Longitude' />
+              <input className='input' type='number' value={this.state === null ? '' : this.state.lng} onChange={event => this.setState({ lng: event.target.value })} placeholder='Longitude' />
             </p>
             <p className='control'>
               <button className='button is-info' type='submit'>
