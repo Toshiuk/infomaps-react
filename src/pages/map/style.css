@@ -1,6 +1,7 @@
 section#map{
-    width: 100%;
-    max-width: 580px;
+    width: 80%;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 0 30px;
+    text-align: center;
+    padding: 30px 30px;
 }
