@@ -1,3 +1,3 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export const Pin = ({ text }) => <span class='tag is-success'>{text}</span>
+export const Pin = ({ text }) => <span className='tag is-success'>{text}</span>

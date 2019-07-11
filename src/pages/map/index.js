@@ -5,11 +5,19 @@ import GoogleMap from './components/GoogleMap'
 import Form from './components/Form'
 
 class Map extends Component {
-  render () {
+  state = {
+    pins: [],
+  };
+
+  insertPin = (name, lat, lng) => {
+    this.setState({ pins: [...this.state.pins, { lat, lng, name }] })
+  }
+
+  render() {
     return (
       <section id='map' >
-        <Form />
-        <GoogleMap />
+        <Form insertPin={this.insertPin} />
+        <GoogleMap pins={this.state.pins} />
       </section>
     )
   }
