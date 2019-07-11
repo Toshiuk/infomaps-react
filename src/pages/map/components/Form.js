@@ -2,13 +2,13 @@
 import React, { Component } from 'react'
 
 class Form extends Component {
-  render() {
+  render () {
     return (
-      <section class="section">
+      <section class='section'>
         <form
           onSubmit={(e) => {
-            e.preventDefault();
-            this.props.insertPin(this.state.name, this.state.lat, this.state.lng);
+            e.preventDefault()
+            this.props.insertPin(this.state.name, this.state.lat, this.state.lng)
           }}
         >
           <div className='field is-grouped'>
@@ -22,9 +22,9 @@ class Form extends Component {
               <input className='input' type='number' value={this.state === null ? null : this.state.lng} onChange={event => this.setState({ lng: event.target.value })} placeholder='Longitude' />
             </p>
             <p className='control'>
-              <button className='button is-info' type="submit">
+              <button className='button is-info' type='submit'>
                 Add
-          </button>
+              </button>
             </p>
           </div>
         </form>

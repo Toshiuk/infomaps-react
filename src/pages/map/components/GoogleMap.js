@@ -1,13 +1,12 @@
 
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import React, { Component } from 'react'
+import GoogleMapReact from 'google-map-react'
 import { Pin } from './Pin'
 
 class GoogleMap extends Component {
-
-  render() {
+  render () {
     return (
-      <div className="container">
+      <div className='container'>
         <div style={{ height: '100vh', margin: '0 auto' }}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyBzM9QFihDcfMVMgJUohyQmFzM8UkUxm00' }}
@@ -28,7 +27,7 @@ class GoogleMap extends Component {
           </GoogleMapReact>
         </div>
       </div>
-    );
+    )
   }
 }
 
