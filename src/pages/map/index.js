@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import './style.css';
-
+import React, { Component } from 'react'
+import './style.css'
 
 class Map extends Component {
-  render() {
+  render () {
     return (
-      <section id="Map">
-
-      </section>
-    );
+      <section id='Map' />
+    )
   }
 }
 
-export default Map;
+export default Map
