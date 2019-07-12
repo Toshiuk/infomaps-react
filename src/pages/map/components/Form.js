@@ -11,17 +11,19 @@ class Form extends Component {
             this.props.insertPin(this.state.name, this.state.lat, this.state.lng)
           }}
         >
-          <div className='field is-grouped'>
-            <p className='control is-expanded'>
+          <div className='field '>
+            <p className='field control is-expanded'>
               <input className='input' type='text' value={this.state === null ? '' : this.state.name} onChange={event => this.setState({ name: event.target.value })} placeholder='Name' />
             </p>
-            <p className='control is-expanded'>
-              <input className='input' type='number' value={this.state === null ? '' : this.state.lat} onChange={event => this.setState({ lat: event.target.value })} placeholder='Latitude' />
-            </p>
-            <p className='control is-expanded'>
-              <input className='input' type='number' value={this.state === null ? '' : this.state.lng} onChange={event => this.setState({ lng: event.target.value })} placeholder='Longitude' />
-            </p>
-            <p className='control'>
+            <div class="field is-horizontal">
+              <p className='control is-expanded'>
+                <input className='input' type='number' value={this.state === null ? '' : this.state.lat} onChange={event => this.setState({ lat: event.target.value })} placeholder='Latitude' />
+              </p>
+              <p className='control is-expanded'>
+                <input className='input' type='number' value={this.state === null ? '' : this.state.lng} onChange={event => this.setState({ lng: event.target.value })} placeholder='Longitude' />
+              </p>
+            </div>
+            <p className='field control'>
               <button className='button is-info' type='submit'>
                 Add
               </button>
